@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" demote-non-dropping-particle="display-and-sort" page-range-format="chicago">
   <info>
-    <title>Chicago Manual of Style 17th edition (note)</title>
+    <title>Chicago Manual of Style 17th edition (note) [WIP update to 18th ed]</title>
     <id>http://www.zotero.org/styles/chicago-note-bibliography</id>
     <link href="http://www.zotero.org/styles/chicago-note-bibliography" rel="self"/>
     <link href="http://www.chicagomanualofstyle.org/tools_citationguide.html" rel="documentation"/>
@@ -786,17 +786,11 @@
   </macro>
   <macro name="publisher">
     <choose>
-      <if type="thesis">
-        <text variable="publisher"/>
-      </if>
-      <else-if type="speech">
+      <if type="speech">
         <text variable="event-place"/>
-      </else-if>
+      </if>
       <else>
-        <group delimiter=": ">
-          <text variable="publisher-place"/>
           <text variable="publisher"/>
-        </group>
       </else>
     </choose>
   </macro>
@@ -1361,7 +1355,7 @@
       </if>
     </choose>
   </macro>
-  <citation et-al-min="4" et-al-use-first="1" disambiguate-add-names="true">
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-names="true">
     <layout suffix="." delimiter="; ">
       <choose>
         <if position="ibid ibid-with-locator" match="any">
@@ -1407,7 +1401,7 @@
       </choose>
     </layout>
   </citation>
-  <bibliography hanging-indent="true" et-al-min="11" et-al-use-first="7" subsequent-author-substitute="&#8212;&#8212;&#8212;" entry-spacing="0">
+  <bibliography hanging-indent="true" et-al-min="7" et-al-use-first="3" entry-spacing="0">
     <sort>
       <key macro="contributors-sort"/>
       <key variable="title"/>
